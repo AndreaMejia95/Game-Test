@@ -15,6 +15,7 @@ public class Slots : MonoBehaviour, IPointerClickHandler
     public bool empty;  //Para saber si nuestro slot está vacío
 
     public Sprite icon;
+
     public Transform slotIconGameObject; //Traeremos el panel (Hijo del slot)
 
     private void Start() {
@@ -34,5 +35,7 @@ public class Slots : MonoBehaviour, IPointerClickHandler
     public void OnPointerClick(PointerEventData pointerEventData)
     {
         UseItem();
+        //Destroy(gameObject);
+        //item.SetActive(false); //Desactiva el slot del inventario
     }
 }

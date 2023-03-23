@@ -7,7 +7,7 @@ public class Inventory2 : MonoBehaviour
 
     private bool inventoryEnabled;
 
-    public GameObject inventory;
+    public GameObject inventory, accesoriesBtn;
 
     private int allSlots;
 
@@ -45,8 +45,10 @@ public class Inventory2 : MonoBehaviour
         if(inventoryEnabled == true)
         {
             inventory.SetActive(true);
+            accesoriesBtn.SetActive(false);
         } else{
             inventory.SetActive(false);
+            accesoriesBtn.SetActive(true);
         }
     }
 
@@ -84,9 +86,8 @@ public class Inventory2 : MonoBehaviour
                 slot[i].GetComponent<Slots>().UpdateSlot(); //Llamamos el método del script slots
 
                 slot[i].GetComponent<Slots>().empty = false; //Ya no está vacía, no se asigna item
+                return; //Con esto se evitará un bucle llenándose cada slot con el mismo elemento
             }
-
-            return; //Con esto se evitará un bucle llenándose cada slot con el mismo elemento
         }
     }
 }

@@ -18,6 +18,7 @@ public class Items : MonoBehaviour
     [HideInInspector]
     public GameObject weapon;
 
+
     [HideInInspector]
     public GameObject weaponManager;
 
