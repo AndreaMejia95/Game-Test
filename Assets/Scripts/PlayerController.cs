@@ -45,13 +45,13 @@ public class PlayerController : MonoBehaviour
             animator.SetBool("OtherKey", false);
 
         }
-
-        if(Input.GetKey("r"))
+*/
+        if(Input.GetKey("q"))
         {
-            animator.Play("Put");
+            //animator.Play("Put");
             animator.SetBool("OtherKey", false);
 
-        }*/
+        }
 
         if(x>0 || x<0 || y>0 || y<0)
         {

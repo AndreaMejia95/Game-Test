@@ -9,6 +9,7 @@ public class Items : MonoBehaviour
     public string description;
     public Sprite icon;
 
+
     [HideInInspector]
     public bool pickedUp;
 
@@ -23,6 +24,9 @@ public class Items : MonoBehaviour
     public GameObject weaponManager;
 
     public bool playerWeapon;
+
+    public Animator animator;
+
 
     void Start ()
     {
@@ -48,7 +52,8 @@ public class Items : MonoBehaviour
         {
             if(Input.GetKeyDown(KeyCode.Q))
             {
-                equipped = false;
+                animator.Play("Put");
+                //equipped = false;
             }
 
             if(equipped == false)
