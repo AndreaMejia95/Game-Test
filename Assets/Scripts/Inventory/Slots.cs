@@ -35,7 +35,7 @@ public class Slots : MonoBehaviour, IPointerClickHandler
     public void OnPointerClick(PointerEventData pointerEventData)
     {
         UseItem();
-        //Destroy(gameObject);
+        Destroy(gameObject);
         //item.SetActive(false); //Desactiva el slot del inventario
     }
 }

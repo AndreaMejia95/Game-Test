@@ -8,6 +8,10 @@ TagManager:
   - Item
   - WeaponManager
   - Axe
+  - Shield
+  - Papyrus
+  - Wooden
+  - Coin
   layers:
   - Default
   - TransparentFX
