@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ColorPants : MonoBehaviour
 {
+    public GameObject pantsOriginal;
     public GameObject pants;
 
     private int accNumber4;
@@ -33,10 +34,12 @@ public class ColorPants : MonoBehaviour
     void PantsElement()
     {
         if(accNumber4 == 0){
+            pantsOriginal.SetActive(true);
             pants.SetActive(false);
         }
 
         if(accNumber4 == 1){
+            pantsOriginal.SetActive(false);
             pants.SetActive(true);
         }
     }

@@ -17,7 +17,7 @@ public class Coffer : MonoBehaviour
     public GameObject iconWooden;
     public GameObject iconCoin;
 
-
+    public GameObject winner;
 
     public bool itemAxeActive = false;
     public bool itemShieldActive = false;
@@ -28,9 +28,12 @@ public class Coffer : MonoBehaviour
     
 
     //public ParticleSystem openChest;
+    public GameObject effectCoffer;
+
     private AudioSource cofferAudio;
     public AudioClip cofferSound;
-    public GameObject effectCoffer;
+    public AudioClip addItemSound;
+    //public AudioClip dancingSound;
     
     
     // Start is called before the first frame update
@@ -52,7 +55,7 @@ public class Coffer : MonoBehaviour
             iconAxe.SetActive(true);
             Destroy(other.gameObject, 2f);
             Debug.Log("Entró Hacha");
-            
+            cofferAudio.PlayOneShot(addItemSound, .3f);
             //StartCoroutine("DancingPlayer");
         }
 
@@ -62,6 +65,7 @@ public class Coffer : MonoBehaviour
             iconShield.SetActive(true);
             Destroy(other.gameObject, 2f);
             Debug.Log("Entró Escudo");
+            cofferAudio.PlayOneShot(addItemSound, .3f);
             
             //StartCoroutine("DancingPlayer");
         }
@@ -73,6 +77,7 @@ public class Coffer : MonoBehaviour
             iconPapyrus.SetActive(true);
             Destroy(other.gameObject, 2f);
             Debug.Log("Entró Papiro");
+            cofferAudio.PlayOneShot(addItemSound, .3f);
             
             //StartCoroutine("DancingPlayer");
         }
@@ -83,6 +88,7 @@ public class Coffer : MonoBehaviour
             iconWooden.SetActive(true);
             Destroy(other.gameObject, 2f);
             Debug.Log("Entró Madera");
+            cofferAudio.PlayOneShot(addItemSound, .3f);
             
             //StartCoroutine("DancingPlayer");
         }
@@ -93,11 +99,12 @@ public class Coffer : MonoBehaviour
             iconCoin.SetActive(true);
             Destroy(other.gameObject, 2f);
             Debug.Log("Entró Moneda");
+            cofferAudio.PlayOneShot(addItemSound, .3f);
             
         }
 
         if(itemAxeActive == true && itemShieldActive == true && itemPapyrusActive == true && itemWoodenActive== true && itemCoinActive == true)
-        {
+        {   
             StartCoroutine("DancingPlayer");
         }
     }
@@ -109,12 +116,19 @@ public class Coffer : MonoBehaviour
     }*/
 
     IEnumerator DancingPlayer()
-    {
+    {   
         yield return new WaitForSeconds(3f);
+        //cofferAudio.PlayOneShot(dancingSound, .2f);
         chestClosed.SetActive(false);
         chestOpen.SetActive(true);
         animator.Play("Dancing");
-        cofferAudio.PlayOneShot(cofferSound, 1.0f);
+        cofferAudio.PlayOneShot(cofferSound, .2f);
         effectCoffer.SetActive(true);
+        winner.SetActive(true);
+    }
+
+    public void OutGame()
+    {
+        Application.Quit();
     }
 }

@@ -7,9 +7,6 @@ public class InterfaceElements : MonoBehaviour
     public GameObject canvasAccessories, btnAccesor, cameraPlayer, cameraAccessories;
     public PlayerController scriptPlayer;
 
-  
-
-
     public void ActiveAccessories(){
         canvasAccessories.SetActive(true);      //Active Canvas Accessories
         scriptPlayer.enabled = false;           //Desactive Script Move Player

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ColorShirt : MonoBehaviour
 {
+    public GameObject OriginalShirt;
     public GameObject shirt;
 
     private int accNumber3;
@@ -33,10 +34,12 @@ public class ColorShirt : MonoBehaviour
     void ShirtElement()
     {
         if(accNumber3 == 0){
+            OriginalShirt.SetActive(true);
             shirt.SetActive(false);
         }
 
         if(accNumber3 == 1){
+            OriginalShirt.SetActive(false);
             shirt.SetActive(true);
         }
     }

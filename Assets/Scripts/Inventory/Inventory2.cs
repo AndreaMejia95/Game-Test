@@ -17,8 +17,14 @@ public class Inventory2 : MonoBehaviour
 
     public GameObject slotHolder;
 
+    private AudioSource inventAudio;
+    public AudioClip inventSound;
+    public AudioClip getItemSound;
+
     void Start()
-    {
+    {   
+        inventAudio = GetComponent<AudioSource>();
+
         allSlots = slotHolder.transform.childCount; //Revisará cuantos hijos slots tiene el slotHolder
 
         slot = new GameObject[allSlots]; //asignamos los slots al array
@@ -32,6 +38,8 @@ public class Inventory2 : MonoBehaviour
                 slot[i].GetComponent<Slots>().empty = true;
             }
         }
+
+        
     }
 
 
@@ -46,22 +54,34 @@ public class Inventory2 : MonoBehaviour
         {
             inventory.SetActive(true);
             accesoriesBtn.SetActive(false);
+            
         } else{
             inventory.SetActive(false);
             accesoriesBtn.SetActive(true);
         }
+
+        soundsInvent();
     }
 
+    private void soundsInvent()
+    {
+        if(Input.GetKeyDown(KeyCode.I))
+        {
+           inventAudio.PlayOneShot(inventSound, .2f);
+        }
+    }
 
     private void OnTriggerEnter(Collider other) 
     {
         if(other.tag == "Item")
         {
+            inventAudio.PlayOneShot(getItemSound, .3f);
             GameObject itemPickedUp = other.gameObject; //Guardamos el objeto con el que se ha colicionado
 
             Items item = itemPickedUp.GetComponent<Items>(); //Instanciamos ítem
 
             AddItem(itemPickedUp, item.ID, item.type, item.description, item.icon); //Llamamos los parámetros del script item
+
         }
     }
 
