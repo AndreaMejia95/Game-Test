@@ -4,7 +4,7 @@
 ## :pencil: Diseño del nivel :pencil:
 - `Nivel 1`: Este pequeño nivel de exploración es un juego de mundo abierto donde está rodeado de vegetación, rocas, una pequeña cueva y una vieja cabaña.
 
-<img src="https://user-images.githubusercontent.com/121190130/227738705-3a388214-e671-4954-bc1d-0a6160e34054.png" width=230>  <img src="https://user-images.githubusercontent.com/121190130/227738729-266b073b-3ab1-4e9a-a436-f75172110278.png" width=230>  <img src="https://user-images.githubusercontent.com/121190130/227738737-d13d6ff2-edfa-41bc-9856-af83a32fc31a.png" width=230>
+<img src="https://user-images.githubusercontent.com/121190130/227738705-3a388214-e671-4954-bc1d-0a6160e34054.png" width=220>  <img src="https://user-images.githubusercontent.com/121190130/227738729-266b073b-3ab1-4e9a-a436-f75172110278.png" width=220>  <img src="https://user-images.githubusercontent.com/121190130/227738737-d13d6ff2-edfa-41bc-9856-af83a32fc31a.png" width=220>
 
 
 ## :hammer: Mecánicas del juego :hammer:
@@ -46,12 +46,12 @@ Bailar cuando se abre el cofre 💃
 - Los canvas de textos permiten obtener indicaciones del progreso en el juego
 - El Winner posee un botón que permite cerrar el juego
 
-<img src="https://user-images.githubusercontent.com/121190130/227737883-d9796f25-fcbe-4a6a-9294-c3fec78ef65d.png" width=230><br>
-<img src="https://user-images.githubusercontent.com/121190130/227737712-6a5986c0-e642-4fc3-8786-ab6de4d59d2f.png" width=230>  <img src="https://user-images.githubusercontent.com/121190130/227737766-dcef2a0d-ba90-4dbf-9e09-47876d41c3c1.png" width=230><br>
+<img src="https://user-images.githubusercontent.com/121190130/227737883-d9796f25-fcbe-4a6a-9294-c3fec78ef65d.png" width=220><br>
+<img src="https://user-images.githubusercontent.com/121190130/227737712-6a5986c0-e642-4fc3-8786-ab6de4d59d2f.png" width=220>  <img src="https://user-images.githubusercontent.com/121190130/227737766-dcef2a0d-ba90-4dbf-9e09-47876d41c3c1.png" width=220><br>
 
-<img src="https://user-images.githubusercontent.com/121190130/227738057-534e083a-9f8e-4d77-84ef-3c37fe3baf0d.png" width=230>  <img src="https://user-images.githubusercontent.com/121190130/227738062-c0e34fab-2c27-4dc9-846d-a7253b848bd4.png" width=230>  <img src="https://user-images.githubusercontent.com/121190130/227738061-b0bd9aa3-7ea6-4f94-afa3-aaf7a5e3e9f4.png" width=230>  <br>
+<img src="https://user-images.githubusercontent.com/121190130/227738057-534e083a-9f8e-4d77-84ef-3c37fe3baf0d.png" width=220>  <img src="https://user-images.githubusercontent.com/121190130/227738062-c0e34fab-2c27-4dc9-846d-a7253b848bd4.png" width=220>  <img src="https://user-images.githubusercontent.com/121190130/227738061-b0bd9aa3-7ea6-4f94-afa3-aaf7a5e3e9f4.png" width=220>  <br>
 
-<img width="230" src="https://user-images.githubusercontent.com/121190130/227738812-fef6776e-998d-4124-b050-2768bedc0c11.png">  <img width="230" src="https://user-images.githubusercontent.com/121190130/227738815-269f0d77-b51f-41d4-b5d2-9472302b6b3f.png">  <img width="230" src="https://user-images.githubusercontent.com/121190130/227738820-f7679978-5aeb-4ea7-83ed-9ca1b1f443e3.png">
+<img width="220" src="https://user-images.githubusercontent.com/121190130/227738812-fef6776e-998d-4124-b050-2768bedc0c11.png">  <img width="220" src="https://user-images.githubusercontent.com/121190130/227738815-269f0d77-b51f-41d4-b5d2-9472302b6b3f.png">  <img width="220" src="https://user-images.githubusercontent.com/121190130/227738820-f7679978-5aeb-4ea7-83ed-9ca1b1f443e3.png">
 
 
 ## 🛠️ Abre y ejecuta el proyecto 🛠️
@@ -60,7 +60,7 @@ Para descargar el proyecto y poder visualizar el nivel en su totalidad deberá d
 - 🖱[Altar Ruins](https://assetstore.unity.com/packages/3d/environments/fantasy/altar-ruins-free-109065)<br>
 - 🖱[Rocks and builders 2](https://assetstore.unity.com/packages/3d/props/exterior/rock-and-boulders-2-6947)<br>
 - La carpeta que contiene todo el proyecto como scripts, items etc se llama "Project Complete" y la visualizas así: <br>
-<img src="https://user-images.githubusercontent.com/121190130/227738637-0c0b9969-f6ee-48ee-bf50-a6d5e3e3b6f2.png" width=230>
+<img src="https://user-images.githubusercontent.com/121190130/227738637-0c0b9969-f6ee-48ee-bf50-a6d5e3e3b6f2.png" width=220>
 
 ## Más información 📜
 - Aquí podrás encontrar el GamePlay del proyecto, puedes verlo en calidad HD para una mejor visualización de la imágen: <br>
